@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+    {% include "navbar.html" %}
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up"> K W M </h1>
+          <h3 style="line-height:1.5;" data-aos="fade-up" data-aos-delay="400">벤처기업 게임 플랫폼</h3>
+          <h3 style="line-height:1.5;" data-aos="fade-up" data-aos-delay="400">광운대학교 벤처스타트업 아카데미</h3>
+          <h2 style="line-height:1.5;" data-aos="fade-up" data-aos-delay="400"> 장현민 김연우 이아린 김동현</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a href="{% url 'game_reco' %}" class="btn-get-started scrollto">게임 추천</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="{% static 'image/kwu.jpg' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+  </main>
+
+    {% include "footer.html" %}
+
+{% endblock %}
+

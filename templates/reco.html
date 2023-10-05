@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block scripts %}
+  {{ block.super }}
+  <script>
+
+
+  </script>
+{% endblock %}
+
+{% block body %}
+<div>
+  {% include "navbar.html" %}
+</div>
+
+<script>
+    function redirectToHome() {
+      window.location.href = "/";
+    }
+  </script>
+
+
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+        <!-- ======= Services Section ======= -->
+
+<!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>GAME</h2>
+          <p>추천 게임은~~!!</p>
+        </div>
+
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+
+          {% if rsBoard.b_genre ==  "RPG" %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                      <img src={{game_data.0.g_image}} class="img-fluid animated" alt="">
+                      <a href={{game_data.0.g_link}} title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>{{game_data.0.g_title}}</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르:{{ game_data.0.g_genre }}</td>
+                    <td width="50%" align="center" >제작사:{{ game_data.0.g_com}}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ game_data.0.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ game_data.0.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {% endif %}
+
+          {% if rsBoard.b_genre ==  "시뮬레이션" %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                      <img src={{game_data.45.g_image}} class="img-fluid animated" alt="">
+                      <a href={{game_data.45.g_link}} title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>{{game_data.45.g_title}}</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르:{{ game_data.45.g_genre }}</td>
+                    <td width="50%" align="center" >제작사:{{ game_data.45.g_com}}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ game_data.45.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ game_data.45.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {% endif %}
+
+          {% if rsBoard.b_genre ==  "액션" %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                      <img src={{game_data.70.g_image}} class="img-fluid animated" alt="">
+                      <a href={{game_data.70.g_link}} title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>{{game_data.70.g_title}}</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르:{{ game_data.70.g_genre }}</td>
+                    <td width="50%" align="center" >제작사:{{ game_data.70.g_com}}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ game_data.70.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ game_data.70.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {% endif %}
+
+          {% if rsBoard.b_genre ==  "전략" %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                      <img src={{game_data.85.g_image}} class="img-fluid animated" alt="">
+                      <a href={{game_data.85.g_link}} title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>{{game_data.85.g_title}}</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르:{{ game_data.85.g_genre }}</td>
+                    <td width="50%" align="center" >제작사:{{ game_data.85.g_com}}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ game_data.85.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ game_data.85.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {% endif %}
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+  </main>
+  {% include "footer.html" %}
+{% endblock %}

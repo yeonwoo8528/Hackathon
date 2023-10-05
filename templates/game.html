@@ -1,0 +1,273 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block scripts %}
+  {{ block.super }}
+  <script>
+
+
+  </script>
+{% endblock %}
+
+
+
+{% block body %}
+<div>
+  {% include "navbar.html" %}
+</div>
+
+
+
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+        <!-- ======= Services Section ======= -->
+
+<!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>GAME</h2>
+          <p> ! 당사 플랫폼에서 제작된 게임 대표작 ! </p>
+        </div>
+
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <img src="{{ rsGames.45.g_image }}" class="img-fluid animated" alt="">
+                  <a href='{{ rsGames.45.g_link }}' title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>"{{ rsGames.45.g_title }}"</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르: {{ rsGames.45.g_genre }}</td>
+                    <td width="50%" align="center" >제작사: {{ rsGames.45.g_com }}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ rsGames.45.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ rsGames.45.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <img src="{{ rsGames.0.g_image }}" class="img-fluid animated" alt="">
+                  <a href='{{ rsGames.0.g_link }}' title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>"{{ rsGames.0.g_title }}"</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르: {{ rsGames.0.g_genre }}</td>
+                    <td width="50%" align="center" >제작사: {{ rsGames.0.g_com }}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ rsGames.0.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ rsGames.0.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <img src="{{ rsGames.46.g_image }}" class="img-fluid animated" alt="">
+                  <a href='{{ rsGames.46.g_link }}' title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>"{{ rsGames.46.g_title }}"</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르: {{ rsGames.46.g_genre }}</td>
+                    <td width="50%" align="center" >제작사: {{ rsGames.46.g_com }}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ rsGames.46.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ rsGames.46.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <img src="{{ rsGames.1.g_image }}" class="img-fluid animated" alt="">
+                  <a href='{{ rsGames.1.g_link }}' title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>"{{ rsGames.1.g_title }}"</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르: {{ rsGames.1.g_genre }}</td>
+                    <td width="50%" align="center" >제작사: {{ rsGames.1.g_com }}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ rsGames.1.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ rsGames.1.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <img src="{{ rsGames.70.g_image }}" class="img-fluid animated" alt="">
+                  <a href='{{ rsGames.70.g_link }}' title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>"{{ rsGames.70.g_title }}"</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르: {{ rsGames.70.g_genre }}</td>
+                    <td width="50%" align="center" >제작사: {{ rsGames.70.g_com }}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ rsGames.70.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ rsGames.70.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <img src="{{ rsGames.47.g_image }}" class="img-fluid animated" alt="">
+                  <a href='{{ rsGames.47.g_link }}' title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>"{{ rsGames.47.g_title }}"</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르: {{ rsGames.47.g_genre }}</td>
+                    <td width="50%" align="center" >제작사: {{ rsGames.47.g_com }}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ rsGames.47.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ rsGames.47.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <img src="{{ rsGames.2.g_image }}" class="img-fluid animated" alt="">
+                  <a href='{{ rsGames.2.g_link }}' title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>"{{ rsGames.2.g_title }}"</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르: {{ rsGames.2.g_genre }}</td>
+                    <td width="50%" align="center" >제작사: {{ rsGames.2.g_com }}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ rsGames.2.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ rsGames.2.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <img src="{{ rsGames.85.g_image }}" class="img-fluid animated" alt="">
+                  <a href='{{ rsGames.85.g_link }}' title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>"{{ rsGames.85.g_title }}"</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르: {{ rsGames.85.g_genre }}</td>
+                    <td width="50%" align="center" >제작사: {{ rsGames.85.g_com }}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ rsGames.85.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ rsGames.85.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <img src="{{ rsGames.3.g_image }}" class="img-fluid animated" alt="">
+                  <a href='{{ rsGames.3.g_link }}' title="Game link"><i class="bx bx-link"></i></a>
+                </div>
+                <h4>"{{ rsGames.3.g_title }}"</h4>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">장르: {{ rsGames.3.g_genre }}</td>
+                    <td width="50%" align="center" >제작사: {{ rsGames.3.g_com }}</td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr style="...">
+                    <td width="50%" align="left">{{ rsGames.3.g_download }}번 이상 다운로드</td>
+                    <td width="50%" align="center" >{{ rsGames.3.g_age }}세 이상</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+  </main>
+  {% include "footer.html" %}
+{% endblock %}
